@@ -9,6 +9,7 @@ import { RouterModule ,Routes} from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes=[
   {
@@ -22,6 +23,9 @@ const appRoutes: Routes=[
   },
   {
     path:"contact",component:ContactComponent
+  },
+  {
+    path:"login",component:LoginComponent
   }
 ]
 @NgModule({
@@ -31,7 +35,8 @@ const appRoutes: Routes=[
     IndexComponent,
     AboutComponent,
     RecipeComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { IndexComponent } from './index/index.component';
 import { RouterModule ,Routes} from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 const appRoutes: Routes=[
   {
@@ -14,6 +15,9 @@ const appRoutes: Routes=[
   },
   {
     path:"about",component:AboutComponent
+  },
+  {
+    path:"recipe",component:RecipeComponent
   }
 ]
 @NgModule({
@@ -21,7 +25,8 @@ const appRoutes: Routes=[
     AppComponent,
     NavbarComponent,
     IndexComponent,
-    AboutComponent
+    AboutComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule,

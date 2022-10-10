@@ -8,6 +8,7 @@ import { IndexComponent } from './index/index.component';
 import { RouterModule ,Routes} from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { RecipeComponent } from './recipe/recipe.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes=[
   {
@@ -18,6 +19,9 @@ const appRoutes: Routes=[
   },
   {
     path:"recipe",component:RecipeComponent
+  },
+  {
+    path:"contact",component:ContactComponent
   }
 ]
 @NgModule({
@@ -26,7 +30,8 @@ const appRoutes: Routes=[
     NavbarComponent,
     IndexComponent,
     AboutComponent,
-    RecipeComponent
+    RecipeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
